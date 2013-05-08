@@ -208,7 +208,7 @@
 			throw Error('Could not find design-overlay script');
 		})();
 		
-		(!window.jQuery) && loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
+		(!window.jQuery) && loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
 		loadCss( thisBasePath + 'design-overlay.css?' + new Date().valueOf() );
 		
 		// extremely crude loading...
@@ -219,7 +219,7 @@
 			}
 			else if (window.jQuery && !hasJqui() && !loadingJqui) {
 				loadingJqui = true;
-				loadScript('//ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js');
+				loadScript('//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js');
 				loadCss('//ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/sunny/jquery-ui.css');
 			}
 		}, 200);
